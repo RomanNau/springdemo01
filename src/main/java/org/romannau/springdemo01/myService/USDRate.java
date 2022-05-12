@@ -1,4 +1,4 @@
-package org.romannau.springdemo01;
+package org.romannau.springdemo01.myService;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

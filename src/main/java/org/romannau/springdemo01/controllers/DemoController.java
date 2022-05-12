@@ -1,6 +1,6 @@
 package org.romannau.springdemo01.controllers;
 
-import org.romannau.springdemo01.USDRate;
+import org.romannau.springdemo01.myService.USDRate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Controller;
