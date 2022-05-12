@@ -15,20 +15,12 @@ import java.io.IOException;
 public class USDRate {
 
 
-    private String dollarCourse = null;
+    private String dollarCourse = "";
 
-
-
-
-    public void setDollarCourse(String dollarCourse) {
-        this.dollarCourse = dollarCourse;
-    }
 
     public String getDollarCourse() {
         return dollarCourse;
     }
-
-
 
     @Scheduled(fixedDelay = 60000)       // парсинг через одну минуту
 
