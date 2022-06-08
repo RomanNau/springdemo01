@@ -1,10 +1,24 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+
+<ul>
+
+            <li sec:authorize="isAnonymous()"><a href="/login">Войти</a></li>
+    <button><li sec:authorize="isAuthenticated()"><a href="/logout">Выйти</a></li></button>
+            <li sec:authorize="isAuthenticated()"><a href="/home">доступ только зарегистрированным пользователям</a></li>
+
+</ul>
+
 <p th:text="${dollarCourse}" />
+
+<h2>Вы зашли как:</h2>
+<p th:text="${Username}" />
+
 </body>
 </html>

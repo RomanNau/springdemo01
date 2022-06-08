@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+  <body>
+  <ul>
+
+      <button><li sec:authorize="isAnonymous()"><a href="/login">Войти</a></li></button>
+      <button><li sec:authorize="isAuthenticated()"><a href="/logout">Выйти</a></li></button>
+      <li sec:authorize="isAuthenticated()"><a href="/home">доступ только зарегистрированным пользователям</a></li>
+
+
+  </ul>
+  <h1>Главная страница</h1>
+  </body>
+</html>

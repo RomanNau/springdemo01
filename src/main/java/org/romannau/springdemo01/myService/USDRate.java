@@ -7,7 +7,6 @@ import org.jsoup.select.Elements;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
 import java.io.IOException;
 
 @EnableScheduling
@@ -47,9 +46,8 @@ public class USDRate {
             System.out.println(dollarCourse);  /*вывод на консоль dollarCourse-необязательная проверка*/
             return dollarCourse;
         }
+            return "home";
 
-
-        return "home";
     }
 
 
